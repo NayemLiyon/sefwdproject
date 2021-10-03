@@ -1,4 +1,4 @@
-
+import django_heroku
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -134,3 +134,7 @@ CLOUDINARY_STORAGE={
   'API_SECRET' : "FcmERCuaqn4cJQ28yfKZQZFvfh0" 
 }
 DEFAULT_FILE_STORAGE='cloudinary_storage.storage.MediaCloudinaryStorage'
+
+
+#for hereku
+django_heroku.settings(locals())
